@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    --webkit--box-sizing: border-box;
+    --moz--box-sizing: border-box;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+body{
+    /* font-family:  'Comfortaa', 'cursive'; */
+        font-family: 'Work Sans', sans-serif;
+background-color: hsl(30, 38%, 92%) ;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+:root
+{
+    --color: hsl(158, 36%, 37%);
+    --color-two: hsl(30, 38%, 92%);
+}
+.continer{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+.perfume .img
+{
+            background-image: url(../images/image-product-desktop.jpg);
+            width: 100%;
+            /*height: 100vh;
+            */background-size: cover;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+}
+.perfume
+{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+@media (max-width:375px){
+    .perfume{
+        flex-direction: column;
+    }
+    .perfume .img{
+        height: 500px;
+    }
+}
+.perfume .text{
+    padding: 30px;
+}
+.perfume h3{
+    letter-spacing: 5px;
+        color: #c3c3c3;
+        font-weight: 800;
+}
+.perfume h2{
+    font-size: 40px;
+}
+    .perfume p{
+/* color: var(--color-two); */
+width: 345px;
+line-height: 1.8;
+color: gray;
+font-size: 14px;
+}
+.perfume .text .price
+{
+    display: flex;
+        justify-content: space-evenly;
+}
+.perfume .text .price > .price
+{
+    /* color: green; */
+    color: hsl(158, 36%, 37%);
+    font-weight: 900;
+    font-size: 50px;
+}
+.perfume .text .price .del-price
+{
+    font-size: 15px;
+    color: #c3c3c3;
+}
+.perfume .text .button
+{
+    display: flex;
+    justify-content: center;
+}
+.perfume .text .button 
+{
+    background: hsl(158, 36%, 37%);
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.perfume .text .button button
+{
+        color: #fff;
+        border: none;
+            outline: none;
+            background: none;
+}
